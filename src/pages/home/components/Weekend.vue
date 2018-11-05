@@ -4,7 +4,7 @@
     <ul>
       <li
         class="item border-bottom"
-        v-for="item of weekendList"
+        v-for="item of list"
         :key="item.id"
       >
         <div class="item-img-wrapper">
@@ -22,24 +22,11 @@
 <script>
 export default {
   name: 'HomeWeekend',
+  props: {
+    list: Array
+  },
   data () {
     return {
-      weekendList: [{
-        id: '1',
-        imgUrl: 'http://img1.qunarzz.com/sight/source/1511/2b/5e0923cd15e06.jpg_r_640x214_b9c024c1.jpg',
-        title: '细数石家庄温泉',
-        desc: '石家庄有没有让你心动的温泉'
-      }, {
-        id: '2',
-        imgUrl: 'http://img1.qunarzz.com/sight/source/1507/82/06e79c5f8d6e7.jpg_r_640x214_5e63707e.jpg',
-        title: '当地人玩什么',
-        desc: '石家庄人民周末好玩法'
-      }, {
-        id: '3',
-        imgUrl: 'http://img1.qunarzz.com/sight/source/1703/e1/93571b553ed1aa.jpg_r_640x214_a7c8c3f6.jpg',
-        title: '风景胜地',
-        desc: '快来一睹河北风光'
-      }]
     }
   }
 }

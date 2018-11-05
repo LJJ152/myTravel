@@ -4,7 +4,7 @@
     <ul>
       <li
         class="item border-bottom"
-        v-for="item of recommendList"
+        v-for="item of list"
         :key="item.key">
         <img class="item-img" :src='item.imgUrl' />
         <div class="item-info">
@@ -20,26 +20,11 @@
 <script>
 export default {
   name: 'HomeRecommend',
+  props: {
+    list: Array
+  },
   data () {
     return {
-      recommendList: [{
-        id: '1',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1607/c3/c3dae954f5da5a20a3.water.jpg_200x200_9ef2b3c0.jpg',
-        title: '石家庄海悦天地海洋公园',
-        desc: '可订明日'
-      },
-      {
-        id: '2',
-        imgUrl: 'http://img1.qunarzz.com/sight/p95/201211/03/30f3d57d7f4d4e4a93835fbb.jpg_200x200_f3d8cf9f.jpg',
-        title: '石家庄市动物园',
-        desc: '可订明日'
-      },
-      {
-        id: '3',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1509/d3/d3e80935a714d3b4.img.jpg_200x200_86fabdf7.jpg',
-        title: '石家庄植物园',
-        desc: '随买随用'
-      }]
     }
   }
 }
