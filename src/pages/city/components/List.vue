@@ -1,11 +1,21 @@
 <template>
-  <div class="list">
+  <div class="list" ref="wrapper">
     <div>
       <div class="area">
-        <div class="title border-bottom">A</div>
+        <div class="title border-bottom">当前城市</div>
+        <div class="button-list">
+          <div class="button-wrapper">
+            <div class="button">北京</div>
+          </div>
+        </div>
       </div>
       <div class="area">
-        <div class="title border-bottom">B</div>
+        <div class="title border-bottom">热门城市</div>
+        <div class="button-list">
+          <div class="button-wrapper">
+            <div class="button">石家庄</div>
+          </div>
+        </div>
       </div>
       <div class="area">
         <div class="title border-bottom">C</div>
@@ -15,8 +25,12 @@
 </template>
 
 <script>
+import Bscroll from 'better-scroll'
 export default {
-  name: 'CityList'
+  name: 'CityList',
+  mounted () {
+    this.scroll = new Bscroll(this.$refs.wrapper)
+  }
 }
 </script>
 
