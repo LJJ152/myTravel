@@ -12,7 +12,6 @@
     >
       {{item}}
     </li>
-    <li>aa</li>
   </ul>
 </template>
 
