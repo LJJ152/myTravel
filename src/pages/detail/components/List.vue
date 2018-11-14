@@ -40,6 +40,6 @@ export default {
     line-height: .8rem
     font-size: .32rem
     padding: 0 .2rem
-    .item-chilren
-      left: 32px
+  .item-chilren
+    padding: 0 .2rem
 </style>
