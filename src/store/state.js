@@ -1,4 +1,4 @@
-let defaultCity = '上海'
+let defaultCity = '石家庄'
 try {
   if (localStorage.city) {
     defaultCity = localStorage.city
